@@ -45,6 +45,8 @@ class SnakeGame(object):
         'a': Pixel.DOWN,
         's': Pixel.LEFT,
         'd': Pixel.UP
+        'r': Pixel.INVERT
+    
     }
 
     def __init__(self):
@@ -97,7 +99,7 @@ class SnakeGame(object):
             self.update_dot_matrix(self.lost_state)
             time.sleep(1)
             game_state.stop_flag = True
-            print "Game Over"
+            print "Game Over, try again"
 
         self.player.step(self.direction)
 
@@ -106,3 +108,4 @@ class SnakeGame(object):
             self.dot = self.get_next_dot()
 
         self.update_dot_matrix(self.all_pixels)
+        
