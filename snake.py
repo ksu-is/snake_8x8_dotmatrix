@@ -94,6 +94,9 @@ class SnakeGame(object):
     def increment(self):
         if not game_state.last_key_press.empty():
             self.direction = game_state.last_key_press.get()
+            #MAKE SURE USER INPUT IS CONSISTEND, Y become y
+            choice = choice.lower()
+            if choice not in ['y','n']
 
         if self.out_of_bounds:
             self.update_dot_matrix(self.lost_state)
