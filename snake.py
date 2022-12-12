@@ -111,4 +111,25 @@ class SnakeGame(object):
             self.dot = self.get_next_dot()
 
         self.update_dot_matrix(self.all_pixels)
+        # Ask if you want to keep playing
+        game_on_first= gameon_choice2(playerone, "playerone")
+        game_on_second= gamon_choice2(playertwo, "playertwo")
+        if game_on_first is false or game_on_second is False:
+            game_on= gameon_choice()
+            if game_on:
+                clear_output()
+                count=0
+                game_on_first = True
+                game_on_second= True
+                # First Game List
+                game_list =[" "," ", " ", " ", " ", "," ", " ", " "]
+                count = 0
+                playerone = PlayerSym_choice()
+                playertwo = playertwochoice()
+                # valid chocie update as game prgresses
+                 validchoice = ["1","2","3","4","5","6","7","8","9"]
+                            
+                
+            
+        
         
